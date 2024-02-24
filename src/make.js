@@ -18,7 +18,7 @@ make.use('/css', express.static(csspath));
 make.use('/js', express.static(jspath));
 make.set('view engine', 'hbs');
 
-make.get('/', async ( req, res )=>{
+make.get('/home', async ( req, res )=>{
     try {
         const ani = `https://anix.ac/home`;
     const anireq = await axios.get(ani);
