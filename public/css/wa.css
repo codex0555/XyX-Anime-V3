@@ -1,0 +1,193 @@
+body{
+    background-color: #000000 !important;
+}
+
+
+
+.watc-pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.iframe-lin {
+    grid-column: 1 / 2;
+}
+
+.wa-shedule {
+    grid-column: 3 / 3;
+    position: relative;
+    left: -5rem;
+    width: 170%;
+    padding: 0.4rem 0;
+}
+
+.wa-time {
+    font-size: 18px;
+}
+
+iframe {
+    width: 190%;
+    height: 100%; /* Adjust height as needed */
+}
+
+.wa-time > a{
+    font-size: 12px;
+    color: #868686;
+    font-family: "Lexend Deca", sans-serif;
+    background-color: #1e1d1d;
+    padding: 0.4rem 0.9rem;
+    width: 100%;
+    display: block;
+    text-decoration: none;
+}
+
+ .wa-time:nth-child(even) > a{
+    background-color: #171717;
+}
+
+.wa-shedule{
+    background-color: ;
+    height: 30rem;
+    overflow: scroll;
+}
+
+.wa-shedule > a{
+    text-decoration: none;
+}
+
+.watc-server{
+    font-size: 14px;
+    color: #868686;
+    background-color: #242424;
+    font-family: "Lexend Deca", sans-serif;
+    text-align: center;
+    padding: 0.6rem;
+}
+
+.watc-ep{
+    background-color: ;
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.watc-server-net{
+    background-color: #202020;
+    width: 41%;
+    padding: 0.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+
+.server-num{
+    padding: 0.4rem 0.6rem;
+    background-color: #4597ee;
+    max-width: 9rem;
+    min-width: 4rem;
+    font-size: 12px;
+    font-family: "Lexend Deca", sans-serif;
+    
+}
+
+.server-num a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .watc-pair{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .iframe-lin iframe{
+        height: 200%;
+        position: relative;
+        top: -0.4rem;
+        width: 100%;
+    }
+
+    .wa-shedule{
+        position: relative;
+        top: 6.9rem;
+        left: 0;
+        width: 100%;
+    }
+
+    .watc-ep{
+        position: relative;
+        top: 5rem;
+    }
+
+    .watc-server{
+        width: 70%;
+        text-align: center;
+        align-items: center;
+        font-size: 12px;
+    }
+
+    .server-num{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 991px) {
+    .wa-shedule{
+        height: 20rem;
+    }
+}
+
+@media (max-width: 495px) {
+    .wa-shedule{
+        position: relative;
+        top: 5.7rem;
+    }
+}
+
+@media (max-width: 470px) {
+    .wa-shedule{
+        position: relative;
+        top: 4.7rem;
+    }
+}
+
+@media (max-width: 444px) {
+    .wa-shedule{
+        position: relative;
+        top: 3.7rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .wa-shedule{
+        position: relative;
+        top: 2.9rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .wa-shedule{
+        position: relative;
+        top: 2.1rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .wa-shedule{
+        position: relative;
+        top: 1.4rem;
+    }
+}
+
+@media (max-width: 358px) {
+    .wa-shedule{
+        position: relative;
+        top: 0.5rem;
+    }
+}
