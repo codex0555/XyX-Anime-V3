@@ -21,7 +21,11 @@ make.set('view engine', 'hbs');
 make.get('/', async ( req, res )=>{
     try {
         const ani = `https://anix.ac/home`;
-    const anireq = await axios.get(ani);
+    const anireq = await axios.get(ani, {
+        headers:{
+            'User-Agent': USER_AGENT,
+        }
+    });
     const anires = anireq.data;
 
     //console.log(anires);
@@ -43,7 +47,11 @@ make.get('/', async ( req, res )=>{
     //let page = 1;
     const page = req.query.id || 1;
     const sublink = `https://ajax.gogo-load.com/ajax/page-recent-release.html?page=${page}&type=1`;
-    const reqnew = await axios.get(sublink);
+    const reqnew = await axios.get(sublink, {
+        headers: {
+            'User-Agent': USER_AGENT,
+        }
+    });
     const resnew = reqnew.data;
 
     const $1 = cheerio.load(resnew);
@@ -60,7 +68,11 @@ make.get('/', async ( req, res )=>{
     })
 
     const dublink = `https://ajax.gogo-load.com/ajax/page-recent-release.html?page=${page}&type=2`;
-    const reqos = await axios.get(dublink);
+    const reqos = await axios.get(dublink, {
+        headers: {
+            'User-Agent': USER_AGENT,
+        }
+    });
     const resos = reqos.data;
 
     const $2 = cheerio.load(resos);
