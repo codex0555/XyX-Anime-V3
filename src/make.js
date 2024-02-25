@@ -20,7 +20,7 @@ make.set('view engine', 'hbs');
 
 make.get('/', async ( req, res )=>{
     try {
-        const ani = ``;
+        const ani = `https://aniwatch-api-v1-0.onrender.com/api/parse`;
     const anireq = await axios.get(ani, {
         headers:{
             'User-Agent': USER_AGENT,
