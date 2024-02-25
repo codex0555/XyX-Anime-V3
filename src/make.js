@@ -4,7 +4,7 @@ const cheerio = require('cheerio');
 const cors = require('cors');
 const path = require('path');
 
-const PORT = 3002;
+const PORT = 3000;
 
 const make = express();
 make.use(cors());
@@ -58,7 +58,6 @@ make.get('/view/:id', async ( req, res )=>{
     const imwbres = imwbreq.data;
 
     res.status(200).render("net", { imwbres});
-    console.log(aniep);
     } catch (error) {
         console.log('errorr',error);
     }
