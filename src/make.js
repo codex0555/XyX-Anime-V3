@@ -4,7 +4,7 @@ const cheerio = require('cheerio');
 const cors = require('cors');
 const path = require('path');
 
-const PORT = 5000;
+const PORT = 3306;
 
 const make = express();
 make.use(cors());
