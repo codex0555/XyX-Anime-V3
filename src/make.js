@@ -46,7 +46,7 @@ make.get('/', async ( req, res )=>{
     }
 })
 
-make.get('/view/:id', async ( req, res )=>{
+make.get('/view/:id/:s/:dub', async ( req, res )=>{
     try {
     const aniid = req.params.id;
     const anilink = `https://x-api-kt9y.onrender.com/api/view/${aniid}`;
