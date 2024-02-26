@@ -98,6 +98,4 @@ make.get('/v1/search', async ( req, res )=>{
 })
 
 
-make.listen(PORT, ()=>{
-    console.log('the live', PORT);
-})
+make.listen(PORT,'0.0.0.0')
