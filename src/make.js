@@ -4,7 +4,7 @@ const cheerio = require('cheerio');
 const cors = require('cors');
 const path = require('path');
 
-const PORT = 3306;
+const PORT = 3000;
 
 const make = express();
 make.use(cors());
@@ -56,25 +56,28 @@ make.get('/view/:id/:s/:dub', async ( req, res )=>{
         }
     });
     const imwbres = imwbreq.data;
+    const sub12 = req.params.s;
+    const dub12 = req.params.dub;
 
-    res.status(200).render("net", { imwbres});
+    res.status(200).render("net", { imwbres, sub12, dub12});
     } catch (error) {
         console.log('errorr',error);
     }
 })
 
-make.get('/watc/:id/:r/:t', async ( req, res )=>{
+make.get('/watc/:id/:r/:t/:d/:dub', async ( req, res )=>{
     try {
         const watcid = req.params.id;
-        const watcr = req.params.r;
-        const watct = req.params.t;
+        const watcr = (req.params.r).split('current-')[1];
+        const watct = (req.params.t).split('sub-')[1];
+        const watcv = (req.params.d).split('dub-')[1];
         const gw = [];
         for( var i = 1; i <= watct; i++){
             var epnu = `${watcid}`;
             var epid = i;
             gw.push({ epnu, epid, watct});
         }
-        res.status(200).render("watch", { gw, watcid, watcr});
+        res.status(200).render("watch", { gw, watcid, watcr, watct, watcv});
     } catch (error) {
         console.log('error',error)
     }
@@ -98,4 +101,6 @@ make.get('/v1/search', async ( req, res )=>{
 })
 
 
-make.listen(PORT,'0.0.0.0')
+make.listen(PORT, ()=>{
+    console.log('the live', PORT);
+})

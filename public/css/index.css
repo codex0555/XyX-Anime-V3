@@ -93,7 +93,7 @@ main.main_all {
 }
 
 .card:hover .play {
-    display: block;
+    display: none;
     scale: 1.2 !important;
     transition: transform .3s,color;
     color: #007BFF;

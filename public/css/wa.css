@@ -88,7 +88,7 @@ iframe {
     padding: 0.4rem 0.6rem;
     background-color: #4597ee;
     max-width: 9rem;
-    min-width: 4rem;
+    min-width: ;
     font-size: 12px;
     font-family: "Lexend Deca", sans-serif;
     
@@ -99,6 +99,44 @@ iframe {
     color: white;
 }
 
+.reloafd svg{
+    width: 0.8rem;
+    position: relative;
+    top: -0.1rem;
+}
+
+.reloafd{
+    font-size: 12px;
+    font-family: "Lexend Deca", sans-serif;
+    color: #868686;
+    font-weight: 600;
+}
+
+.pre svg{
+    width: 0.8rem;
+}
+
+.next svg{
+    width: 0.8rem;
+}
+
+.pre, .next{
+    font-size: 12px;
+    font-family: "Lexend Deca", sans-serif;
+    color: #868686;
+    font-weight: 600;
+}
+
+.reloadprenext{
+    display: flex;
+    gap: 2rem;
+    display: none;
+}
+
+.prenext{
+    display: flex;
+    gap: 2rem;
+}
 /* Responsive Styles */
 @media (max-width: 768px) {
     .watc-pair{
@@ -107,7 +145,7 @@ iframe {
     }
 
     .iframe-lin iframe{
-        height: 200%;
+        height: 170%;
         position: relative;
         top: -0.4rem;
         width: 100%;
@@ -135,6 +173,40 @@ iframe {
 
     .server-num{
         font-size: 11px;
+    }
+
+    .reloadprenext{
+        position: relative;
+        top: -4rem;
+    }
+
+    .reloafd{
+        font-size: 10px;
+    }
+
+    .reloafd svg{
+        width: 0.7rem;
+        top: 0;
+        position: relative;
+    }
+
+    .pre{
+        font-size: 10px;
+    }
+
+    .pre svg{
+        width: 0.7rem;
+        top: 0;
+        
+    }
+
+    .next{
+        font-size: 10px;
+    }
+
+    .next svg{
+        width: 0.7rem;
+        top: 0;
     }
 }
 

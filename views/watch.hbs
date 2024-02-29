@@ -79,31 +79,70 @@
         <div class="iframe-lin">
             {{!-- <iframe src="https://xyxanime.rf.gd/ff?id={{watcid}}-episode-{{watcr}}" name="iframe" class="iframe"
                 frameborder="0" allow="accelerometer; autoplay; encrypted-media;gyroscope; picture-in-picture"
-                scrolling="no" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> --}}
+                scrolling="no" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            --}}
 
-            <iframe src="https://xyxanime.rf.gd/playerx?id={{watcid}}-episode-{{watcr}}" name="iframe" class="iframe" frameborder="0"
-                scrolling="no" allow="accelerometer; autoplay; encrypted-media;gyroscope; picture-in-picture"
-                allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
-        </div>
-        <div class="wa-shedule">
-            {{#each gw}}
+            <iframe src="https://xyxanime.rf.gd/playerx?id={{watcid}}-episode-{{watcr}}" name="iframe" class="iframe"
+                frameborder="0" scrolling="no"
+                allow="accelerometer; autoplay; encrypted-media;gyroscope; picture-in-picture" allowfullscreen="true"
+                webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+            <div class="reloadprenext">
+                <div class="reloafd">RELOAD
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="white"
+                            d="M142.9 142.9c62.2-62.2 162.7-62.5 225.3-1L327 183c-6.9 6.9-8.9 17.2-5.2 26.2s12.5 14.8 22.2 14.8H463.5c0 0 0 0 0 0H472c13.3 0 24-10.7 24-24V72c0-9.7-5.8-18.5-14.8-22.2s-19.3-1.7-26.2 5.2L413.4 96.6c-87.6-86.5-228.7-86.2-315.8 1C73.2 122 55.6 150.7 44.8 181.4c-5.9 16.7 2.9 34.9 19.5 40.8s34.9-2.9 40.8-19.5c7.7-21.8 20.2-42.3 37.8-59.8zM16 312v7.6 .7V440c0 9.7 5.8 18.5 14.8 22.2s19.3 1.7 26.2-5.2l41.6-41.6c87.6 86.5 228.7 86.2 315.8-1c24.4-24.4 42.1-53.1 52.9-83.7c5.9-16.7-2.9-34.9-19.5-40.8s-34.9 2.9-40.8 19.5c-7.7 21.8-20.2 42.3-37.8 59.8c-62.2 62.2-162.7 62.5-225.3 1L185 329c6.9-6.9 8.9-17.2 5.2-26.2s-12.5-14.8-22.2-14.8H48.4h-.7H40c-13.3 0-24 10.7-24 24z" />
+                    </svg>
+                </div>
 
-            <div class="wa-time"><a href="/watc/{{epnu}}/{{epid}}/{{watct}}" class="list-wa"
-                    data-link="{{epid}}/80">{{epid}}. Epiosde {{epid}}</a></div>
-            {{/each}}
-        </div>
-    </div>
+                <div class="prenext">
+                    <div class="pre">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path fill="white"
+                                d="M459.5 440.6c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29V96c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4L288 214.3V256v41.7L459.5 440.6zM256 352V256 128 96c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4l-192 160C4.2 237.5 0 246.5 0 256s4.2 18.5 11.5 24.6l192 160c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29V352z" />
+                        </svg>
+                        PRE
+                    </div>
 
-    <div class="watc-ep container">
-        <div class="watc-server">
-            You are watching <strong>Episode {{watcr}}</strong><br>
-            (If current server doesn't work please try other servers beside.)
+                    <div class="next">
+                        NEXT
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                            <path fill="white"
+                                d="M52.5 440.6c-9.5 7.9-22.8 9.7-34.1 4.4S0 428.4 0 416V96C0 83.6 7.2 72.3 18.4 67s24.5-3.6 34.1 4.4L224 214.3V256v41.7L52.5 440.6zM256 352V256 128 96c0-12.4 7.2-23.7 18.4-29s24.5-3.6 34.1 4.4l192 160c7.3 6.1 11.5 15.1 11.5 24.6s-4.2 18.5-11.5 24.6l-192 160c-9.5 7.9-22.8 9.7-34.1 4.4s-18.4-16.6-18.4-29V352z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="watc-server-net">
-            <div class="server-num"><a href="">DooDstreAM</a></div>
+            <div class="wa-shedule">
+                {{#each gw}}
+
+                <div class="wa-time"><a href="" class="list-wa"
+                        data-link="/current-{{epid}}/sub-{{../watct}}/dub-{{../watcv}}?id=">{{epid}}. Epiosde {{epid}}</a></div>
+                {{/each}}
+            </div>
         </div>
-    </div>
-    {{!-- End Of See --}}
+
+        <div class="watc-ep container">
+            <div class="watc-server">
+                You are watching <strong>Episode {{watcr}}</strong><br>
+                (If current server doesn't work please try other servers beside.)
+            </div>
+            <div class="watc-server-net">
+                <div class="server-num"><a href="" data-link="">SUB</a></div>
+                
+                <div class="server-num" id="dut"><a href="" data-link="-dub">DUB</a></div>
+
+                
+
+
+
+            
+            </div>
+        </div>
+        {{!-- End Of See --}}
 
 </body>
 <script src="/js/he.js"></script>
