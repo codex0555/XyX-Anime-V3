@@ -116,33 +116,34 @@
                 </div>
             </div>
         </div>
-            <div class="wa-shedule">
-                {{#each gw}}
+        <div class="wa-shedule">
+            {{#each gw}}
 
-                <div class="wa-time"><a href="" class="list-wa"
-                        data-link="/current-{{epid}}/sub-{{../watct}}/dub-{{../watcv}}?id=">{{epid}}. Epiosde {{epid}}</a></div>
-                {{/each}}
+            <div class="wa-time"><a href="" class="list-wa"
+                    data-link="/current-{{epid}}/sub-{{../watct}}/dub-{{../watcv}}?id=">{{epid}}. Epiosde {{epid}}</a>
             </div>
+            {{/each}}
         </div>
+    </div>
 
-        <div class="watc-ep container">
-            <div class="watc-server">
-                You are watching <strong>Episode {{watcr}}</strong><br>
-                (If current server doesn't work please try other servers beside.)
-            </div>
-            <div class="watc-server-net">
-                <div class="server-num"><a href="" data-link="">SUB</a></div>
-                
-                <div class="server-num" id="dut"><a href="" data-link="-dub">DUB</a></div>
-
-                
-
-
-
-            
-            </div>
+    <div class="watc-ep container">
+        <div class="watc-server">
+            You are watching <strong>Episode {{watcr}}</strong><br>
+            (If current server doesn't work please try other servers beside.)
         </div>
-        {{!-- End Of See --}}
+        <div class="watc-server-net">
+            <div class="server-num"><a href="" data-link="">SUB</a></div>
+
+            <div class="server-num" id="dut"><a href="" data-link="-dub">DUB</a></div>
+
+
+
+
+
+
+        </div>
+    </div>
+    {{!-- End Of See --}}
 
 </body>
 <script src="/js/he.js"></script>
