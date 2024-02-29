@@ -18,33 +18,33 @@ make.use('/css', express.static(csspath));
 make.use('/js', express.static(jspath));
 make.set('view engine', 'hbs');
 
-make.get('/', async ( req, res )=>{
-    try {
-        const ani = `https://aniwatch-api-v1-0.onrender.com/api/parse`;
-    const anireq = await axios.get(ani, {
-        headers:{
-            'User-Agent': USER_AGENT,
-        }
-    });
-    const anires = anireq.data;
+// make.get('/', async ( req, res )=>{
+//     try {
+//         const ani = `https://aniwatch-api-v1-0.onrender.com/api/parse`;
+//     const anireq = await axios.get(ani, {
+//         headers:{
+//             'User-Agent': USER_AGENT,
+//         }
+//     });
+//     const anires = anireq.data;
 
-    //console.log(anires);
+//     //console.log(anires);
 
     
-    const page = req.params.id || 1;
-    const sublink = `https://x-api-kt9y.onrender.com/api/ant/${page}`;
-    const reqnew = await axios.get(sublink, {
-        headers: {
-            'User-Agent': USER_AGENT,
-        }
-    });
-    const resnew = reqnew.data;
+//     const page = req.params.id || 1;
+//     const sublink = `https://x-api-kt9y.onrender.com/api/ant/${page}`;
+//     const reqnew = await axios.get(sublink, {
+//         headers: {
+//             'User-Agent': USER_AGENT,
+//         }
+//     });
+//     const resnew = reqnew.data;
 
-    res.status(200).render("index", { anires, resnew});
-    } catch (error) {
-        console.log('error',error);
-    }
-})
+//     res.status(200).render("index", { anires, resnew});
+//     } catch (error) {
+//         console.log('error',error);
+//     }
+// })
 
 make.get('/view/:id/:s/:dub', async ( req, res )=>{
     try {
