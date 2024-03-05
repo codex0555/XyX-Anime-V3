@@ -87,11 +87,11 @@
     <div class="net-wb-prime container">
         <div class="net-rest">
             <div class="img-net">
-                <img src="{{imwbres.vido}}" alt="">
+                <img src="{{imwbres.sta}}" alt="">
             </div>
             <div class="you-need-net">
-                <div class="net-name">{{imwbres.jname}}</div>
-                <div class="net-desc">{{imwbres.storyline}}</div>
+                <div class="net-name">{{imwbres.name}}</div>
+                <div class="net-desc">{{imwbres.desc}}</div>
                 <div class="pg-quality">
                     <div class="pg-net">PG-13</div>
                     <div class="quality-net">HD</div>
@@ -104,18 +104,18 @@
                     </div>
                     <div class="score-net">Score: {{imwbres.rating}}</div>
                     <div class="ru-net">RunTime: {{imwbres.runt}}</div>
-                    <div class="status-net">Status: ?{{sub12}}</div>
-                    <div class="episode-your">Epiosode: -{{dub12}}<span>{{imwbres.total}}</span></div>
+                    <div class="status-net">Status: {{imwbres.status}}</div>
+                    <div class="episode-your">Epiosode: <span>({{sub12}} SUB) ({{dub12}} DUB)</span></div>
                 </div>
             </div>
         </div>
         <div class="net-part">
             <div class="net-episode">Episodes</div>
             <div class="net-wb">
-                {{#each imwbres.eptoat}}
+                {{#each servep}}
                 <div class="card-ep">
                     <div class="ep-image">
-                        <a href="/watc/{{totalnum}}/current-{{idnum}}//sub-{{../sub12}}/dub-{{../dub12}}/1">
+                        <a href="/watc/{{thetotaep}}/current-{{cut}}/sub-{{../sub12}}/dub-{{../dub12}}/1">
                             <img src="https://i.pinimg.com/564x/96/78/62/96786230db858b0c69629c70ab6a7528.jpg" alt="">
                         </a>
                         <div class="ep-play">
@@ -123,7 +123,7 @@
                         </div>
                     </div>
 
-                    <div class="ep-tit">Episode - {{idnum}}</div>
+                    <div class="ep-tit">Episode - {{cut}}</div>
                 </div>
                 {{/each}}
 
