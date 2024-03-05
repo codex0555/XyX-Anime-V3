@@ -160,11 +160,17 @@ a{
     }
 
     .spot_watch{
-        font-size: 15px;
+        font-size: 12px;
         padding: 0.2rem;
         width: 6rem;
         position: relative;
-        top: -0.6rem;
+        top: -0.4rem;
+    }
+
+    .spot_watch > i{
+        font-size: 12px;
+        position: relative;
+        top: 0rem;
     }
 
     .spot_title{
@@ -179,7 +185,7 @@ a{
 
     .spot_genres{
         position: relative;
-        top: -1rem;
+        top: -0.8rem;
     }
 
     .rating svg{

@@ -8,22 +8,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const fdub = idmm.split('/dub-')[1].split('/1')[0];
     const fsub = idmm.split('/current-')[1].split('/sub-')[0];
 
-    // Change the display style of the `sut` element based on conditions
-if (fsub > fdub) {
-    // If the current is greater than the dub, display none
-    sut.style.display = 'none';
-} else if (fsub === fdub) {
-    // If the current is equal to dub, display block
-    sut.style.display = 'block';
-} else {
-    // If the current is smaller than the dub, display block
-    sut.style.display = 'block';
-}
-
-// After changing the display style, reload the contents of the `sut` div
-sut.innerHTML = sut.innerHTML;
-
-
+    // if( fdub !== fsub){
+    //    sut.style.display = 'block';
+    // }
+    // else if( fdub > fsub) {
+    //      sut.style.display = 'none';
+    // }
+    // else{
+    //     sut.style.display = 'none';
+    // }
 
 parentContainer.addEventListener('click', (e) => {
     e.preventDefault(); // Prevent the default behavior of the link click
