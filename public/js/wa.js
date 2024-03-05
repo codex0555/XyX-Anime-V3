@@ -33,7 +33,7 @@ parentContainer.addEventListener('click', (e) => {
     history.pushState({}, '', link); // Update the browser's history with the new URL
 
    
-    iframe.src = `https://xyxanime.rf.gd/playerx?id=${linkid}${dh}-episode-${mn}`;
+    iframe.src = `https://proxy.techzbots1.workers.dev/?u=https://xyxanime.rf.gd/playerx?id=${linkid}${dh}-episode-${mn}`;
     
 });
 
@@ -57,7 +57,7 @@ parentContainer.addEventListener('click', (e) => {
            // newUrl = newUrl.split('/watch/')[1];
             // Reload the iframe
             // iframe.src = ``;
-            iframe.src = `https://xyxanime.rf.gd/playerx?id=${linkid}-episode-${sub2}`;
+            iframe.src = `https://proxy.techzbots1.workers.dev/?u=https://xyxanime.rf.gd/playerx?id=${linkid}-episode-${sub2}`;
         });
     });
 });
