@@ -1,3 +1,3 @@
 # xyx-a
 
-![Screenshot](https://github.com/codex0555/XyX-Anime/blob/main/preview1.png)
+![Screenshot](https://github.com/codex0555/XyX-Anime-V3/public/v3-1.png)
