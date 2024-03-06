@@ -145,15 +145,16 @@ iframe {
     }
 
     .iframe-lin iframe{
-        height: 170%;
-        position: relative;
-        top: -0.4rem;
+        height: 100%;
+        position: absolute;
+        top: 3.8rem;
         width: 100%;
+        left: 0rem;
     }
 
     .wa-shedule{
         position: relative;
-        top: 6.9rem;
+        top: 30rem;
         left: 0;
         width: 100%;
         height: 10rem !important;
@@ -161,7 +162,7 @@ iframe {
 
     .watc-ep{
         position: relative;
-        top: 5rem;
+        top: 14rem;
     }
 
     .watc-server{
@@ -210,6 +211,126 @@ iframe {
     }
 }
 
+@media (max-width: 720px) {
+    .watc-ep{
+        position: relative;
+        top: 12rem;
+    }
+
+    .wa-shedule{
+        position: relative;
+        top: 28rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .watc-ep{
+        position: relative;
+        top: 11rem;
+    }
+
+    .wa-shedule{
+        position: relative;
+        top: 27rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .watc-ep{
+        position: relative;
+        top: 10rem;
+    }
+
+    .wa-shedule{
+        position: relative;
+        top: 26rem;
+    }
+}
+
+@media (max-width: 612px) {
+    .watc-ep{
+        position: relative;
+        top: 9rem;
+    }
+
+    .wa-shedule{
+        position: relative;
+        top: 25rem;
+    }
+}
+
+@media (max-width: 578px) {
+    .watc-ep{
+        position: relative;
+        top: 7rem;
+    }
+
+    .wa-shedule{
+        position: relative;
+        top: 23rem;
+    }
+}
+
+@media (max-width: 492px) {
+    .watc-ep{
+        position: relative !important;
+        top: 4rem !important;
+    }
+
+    .wa-shedule{
+        position: relative !important;
+        top: 20rem !important;
+    }
+}
+
+@media (max-width: 448px) {
+    .watc-ep{
+        position: relative !important;
+        top: 2.8rem !important;
+    }
+
+    .wa-shedule{
+        position: relative !important;
+        top: 19rem !important;
+    }
+}
+
+@media (max-width: 416px) {
+    .watc-ep{
+        position: relative !important;
+        top: 1.3rem !important;
+    }
+
+    .wa-shedule{
+        position: relative !important;
+        top: 17.3rem !important;
+    }
+}
+
+@media (max-width: 384px) {
+    .watc-ep{
+        position: relative !important;
+        top: 0.1rem !important;
+    }
+
+    .wa-shedule{
+        position: relative !important;
+        top: 16.2rem !important;
+    }
+}
+
+@media (max-width: 352px) {
+    .watc-ep{
+        position: relative !important;
+        top: -1rem !important;
+    }
+
+    .wa-shedule{
+        position: relative !important;
+        top: 16.2rem;
+    }
+}
+
 @media (max-width: 991px) {
     .wa-shedule{
         height: 20rem;
@@ -220,121 +341,24 @@ iframe {
     }
 }
 
-@media (max-width: 572px) {
-    .iframe-lin iframe{
-        width: 104.7%;
+@media (max-width: 534px) {
+    .watc-ep{
         position: relative;
-        left: -0.6rem;
+        top: 5.6rem;
     }
 
     .wa-shedule{
         position: relative;
-        top: 8.8rem;
-    }
-
-    .watc-ep{
-        position: relative;
-        top: 7rem;
+        top: 21.7rem;
     }
 }
 
-@media screen and (max-width: 516px) {
-    .wa-shedule{
-        position: relative;
-        top: 7rem;
-    }
-
-    .watc-ep{
-        position: relative !important;
-        top: 5.7rem !important;
-    }
-}
-
-@media screen and (max-width: 482px) {
-    .wa-shedule{
-        position: relative !important;
-        top: 5.7rem !important;
-    }
-
-    .watc-ep{
-        position: relative !important;
-        top: 3.9rem !important;
-    }
-}
 
 @media (max-width: 456px) {
-    .wa-shedule{
-        position: relative !important;
-        top: 4.8rem !important;
-    }
 
-    .watc-ep{
-        position: relative !important;
-        top: 3rem !important;
-    }
 
     .wa-time > a{
         font-size: 12px;
-    }
-}
-
-@media (max-width: 426px) {
-    .wa-shedule{
-        position: relative !important;
-        top: 3.9rem !important;
-    }
-
-    .watc-ep{
-        position: relative !important;
-        top: 2rem !important;
-    }
-}
-
-@media (max-width: 410px) {
-    .wa-shedule{
-        position: relative !important;
-        top: 3.1rem !important;
-    }
-
-    .watc-ep{
-        position: relative !important;
-        top: 1.6rem !important;
-    }
-}
-
-@media (max-width: 390px) {
-    .wa-shedule{
-        position: relative !important;
-        top: 2.5rem !important;
-    }
-
-    .watc-ep{
-        position: relative !important;
-        top: 1.1rem !important;
-    }
-}
-
-@media (max-width: 370px) {
-    .wa-shedule{
-        position: relative !important;
-        top: 1.6rem !important;
-    }
-
-    .watc-ep{
-        position: relative !important;
-        top: 0.1rem !important;
-    }
-}
-
-@media (max-width: 351px) {
-    .wa-shedule{
-        position: relative !important;
-        top: 0.9rem !important;
-    }
-
-    .watc-ep{
-        position: relative !important;
-        top: -0.9rem !important;
     }
 }
 

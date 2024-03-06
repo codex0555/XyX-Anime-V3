@@ -5,6 +5,7 @@ const button = document.querySelector('.search-box');
 const phone = document.querySelector('.phone');
 const swipe = document.querySelector('.swiper-container');
 const heat1 = document.querySelector('.heat');
+const screenz = document.querySelector('.iframe-lin iframe');
 let isPhoneVisible = false; // Variable to track phone visibility
 
 // Function to handle resizing logic
@@ -50,5 +51,7 @@ button.addEventListener('click', () => {
         // Toggle phone visibility
         phone.style.display = isPhoneVisible ? "none" : "block";
         isPhoneVisible = !isPhoneVisible; // Toggle visibility state
+        screenz.style.top = isPhoneVisible ? "6rem" : "3.8rem";
+
     }
 });

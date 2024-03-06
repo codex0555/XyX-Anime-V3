@@ -8,15 +8,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const fdub = idmm.split('/dub-')[1].split('/1')[0];
     const fsub = idmm.split('/current-')[1].split('/sub-')[0];
 
-    // if( fdub !== fsub){
-    //    sut.style.display = 'block';
-    // }
+    if( fdub >= fsub){
+       sut.style.display = 'block';
+    }
     // else if( fdub > fsub) {
     //      sut.style.display = 'none';
     // }
-    // else{
-    //     sut.style.display = 'none';
-    // }
+    else{
+        sut.style.display = 'none';
+    }
 
 parentContainer.addEventListener('click', (e) => {
     e.preventDefault(); // Prevent the default behavior of the link click
@@ -33,7 +33,7 @@ parentContainer.addEventListener('click', (e) => {
     history.pushState({}, '', link); // Update the browser's history with the new URL
 
    
-    iframe.src = `https://proxy.techzbots1.workers.dev/?u=https://xyxanime.rf.gd/playerx?id=${linkid}${dh}-episode-${mn}`;
+    iframe.src = `https://xyxanime.rf.gd/playerx?id=${linkid}${dh}-episode-${mn}`;
     
 });
 
@@ -57,7 +57,7 @@ parentContainer.addEventListener('click', (e) => {
            // newUrl = newUrl.split('/watch/')[1];
             // Reload the iframe
             // iframe.src = ``;
-            iframe.src = `https://proxy.techzbots1.workers.dev/?u=https://xyxanime.rf.gd/playerx?id=${linkid}-episode-${sub2}`;
+            iframe.src = `https://xyxanime.rf.gd/playerx?id=${linkid}-episode-${sub2}`;
         });
     });
 });
