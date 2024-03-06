@@ -117,7 +117,7 @@ make.get('/', async ( req, res )=>{
     });
     const resnew = reqnew.data;
 
-    res.status(200).render("", { anires, resnew});
+    res.status(200).render("index", { anires, resnew});
     } catch (error) {
         console.log('error',error);
     }
