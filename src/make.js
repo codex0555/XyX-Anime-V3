@@ -109,7 +109,7 @@ make.get('/', async ( req, res )=>{
 
     
     const page = req.params.id || 1;
-    const sublink = `https://x-api-kt9y.onrender.com/api/ant/${page}`;
+    const sublink = `https://proxy.techzbots1.workers.dev/?u=https://x-api-kt9y.onrender.com/api/ant/${page}`;
     const reqnew = await axios.get(sublink, {
         headers: {
             'User-Agent': USER_AGENT,
@@ -126,7 +126,7 @@ make.get('/', async ( req, res )=>{
 make.get('/view/:id/:s/:dub', async ( req, res )=>{
     try {
     const aniid = req.params.id;
-    const anilink = `https://x-api-kt9y.onrender.com/api/view/${aniid}`;
+    const anilink = `https://proxy.techzbots1.workers.dev/?u=https://x-api-kt9y.onrender.com/api/view/${aniid}`;
     const imwbreq = await axios.get(anilink, {
         headers:{
             'User-Agent': USER_AGENT,
@@ -171,7 +171,7 @@ make.get('/watc/:id/:r/:t/:d/:dub', async ( req, res )=>{
 make.get('/v1/search', async ( req, res )=>{
     try {
         const key = req.query.q;
-    const selink = `https://x-api-kt9y.onrender.com/api/sit/${key}`;
+    const selink = `https://proxy.techzbots1.workers.dev/?u=https://x-api-kt9y.onrender.com/api/sit/${key}`;
     const sereq = await axios.get(selink, {
         headers:{
             'User-Agent': USER_AGENT,
